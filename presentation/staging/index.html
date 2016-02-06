@@ -11,12 +11,15 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="extras/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/audioplayer.js"></script>
 
 <!-- STYLE -->
 <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/rando.css">
+
+<title>A Million Random Digits: Audiobook edition</title>
 
 </head>
 <body>
@@ -28,7 +31,8 @@
 		<div class="pull-right " style="padding-top: 1.5em">
 			<ul class="nav nav-pills">
 				<li role="presentation" class="active"><a href="#">home</a></li>
-				<li role="presentation"><a href="#">about</a></li>
+				<li role="presentation"><a href="about.html">about</a></li>
+				<li role="presentation"><a href="data/chapter_one.ogg">download</a></li>
 			</ul>
 		</div>
 
@@ -60,9 +64,11 @@
 <div class="container">
 </div>
 <footer class="footer">
-      <div class="container">
-        <p class="text-muted">AUDIO TRACK GOES HERE</p>
-      </div>
+      <!-- <div class="container"> -->
+      	<audio controls>
+      		<source src="data/chapter_one.ogg" type="audio/ogg" controls>
+      	</audio>
+      <!-- </div> -->
     </footer>
 
 <script type="text/javascript">

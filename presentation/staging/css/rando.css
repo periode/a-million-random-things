@@ -39,6 +39,15 @@ ul > .nav {
   padding-left: 15px;
 }
 
+audio{
+  display: block;
+  position: relative;
+  width: 31%;
+  height: 80%;
+  margin: auto;
+  padding: auto;
+}
+
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
