@@ -6,6 +6,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
+<link rel="icon" href="data/favicon.gif" type="image/gif" />
 <!-- <script type="text/javascript" src="extras/jquery.min.1.7.js"></script> -->
 <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 
@@ -461,10 +462,14 @@
 </div>
 <footer class="footer">
       <!-- <div class="container"> -->
-      	<audio controls>
+      <div class="buttons">
+      	<audio id="audio" style="display:hidden;">
       		<source src="data/chapter_one.ogg" type="audio/ogg" controls>
       	</audio>
-      <!-- </div> -->
+      	<button onclick="playBook()">play</button>
+      	<button onclick="pauseBook()">pause</button>
+      	<button onclick="stopBook()">stop</button>
+      </div>
     </footer>
 
 <script type="text/javascript">
