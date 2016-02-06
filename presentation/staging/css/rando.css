@@ -37,6 +37,7 @@ ul > .nav {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
+  text-align: right;
 }
 
 audio{
@@ -46,6 +47,19 @@ audio{
   height: 80%;
   margin: auto;
   padding: auto;
+}
+
+.about{
+  position: absolute;
+  /*display: block;*/
+  top:40%;
+  left: 20%;
+  width: 60%;
+  height:100%;
+  text-align: justify;
+  margin: auto;
+  padding: auto;
+  font-size: 14px
 }
 
 
