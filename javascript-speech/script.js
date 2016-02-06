@@ -17,13 +17,15 @@ function setup(){
 	console.log(words);
 	voice.listVoices();
 	voice.setVoice('Tessa');
-	voice.setPitch(0.2);
+	voice.setPitch(0.3);
 	current_time = millis();
+
+	voice.speak('This audio book is loosely based on their inspiring work, and is intended for mature audiences only. Chapter One. To continue listening, you can buy the whole book at w w w  dot a million random digits dot com.');
 }
 
 function draw(){
-	if(words != null && millis() - current_time > timer && canSpeak)
-		say_digit();
+	// if(words != null && millis() - current_time > timer && canSpeak && current_word < words.length)
+	// 	say_digit();
 }
 
 function say_digit(){
