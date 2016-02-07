@@ -3,66 +3,104 @@ body {
 	color: #333;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+body > .container {
+  height: 100vh;
+  padding: 120px 15px 200px;
+  overflow-y: scroll;
 }
 
-body > .container {
-  padding: 60px 15px 0;
+
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+.sans-serif {
+  font-family: Verdana,Geneva,sans-serif;
 }
 
 .header {
 	border-bottom: 1px solid #e5e5e5
 }
 
-ul > .nav {
-	display: block;
-	vertical-align: middle;
-	font-size: 0;
+.nav {
+  margin: 1.4em 0;
+}
+
+
+p {
+  margin-bottom: 1.4em;
+}
+
+.lead {
+  font-size: 2em;
+  font-style: italic;
+  margin: 1.0em 0 0.8em 0;
+}
+
+.disclaimer {
+  font-size: 0.8em;
 }
 
 .container .text-muted {
   margin: 20px 0;
 }
+
+
 .footer {
   position: absolute;
+  display: table;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
   padding:10px;
+  vertical-align: middle
+}
+
+.player {
+  height: 100px;
+}
+
+body {
+  /* Margin bottom by footer height */
+  /*margin-bottom: 100px;*/
 }
 
 .footer > .container {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
   padding-right: 15px;
   padding-left: 15px;
+  
+}
+
+.align-right {
   text-align: right;
 }
 
-
-.buttons{
-  /*display: block;*/
-  /*float:left;*/
-  left:60%;
-  top:20%;
-  width:20%;
-  margin: auto;
-  padding-left: 5%;
+.align-center {
+  text-align: center;
 }
 
 .about{
-  position: absolute;
   display: block;
-  top:40%;
-  left: 20%;
+  /*left: 20%;
   width: 60%;
-  height:100%;
+  height:100%;*/
   text-align: justify;
   margin: auto;
   padding: auto;
-  font-size: 14px
+  font-size: 1.4em;
 }
 
 
